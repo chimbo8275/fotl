@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+#header {
+    background-color:teal;
+    text-shadow: 2px 2px black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:gray;
+    border:;
+    height:600px;
+    width:100px;
+    float:left;
+    padding:5px;        
+}
+#section {
+    height:590px;
+    width:485px;
+    float:left;
+    padding:10px;
+    background-color:white;    
+}
+#footer {
+    background-color:teal;
+    text-shadow: 2px 2px black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;    
+}
+
+h1 {
+    color:white;
+    text-align:center;
+}
+h2 {
+    color:black;
+    text-align:center;
+    text-shadow: 2px 2px teal;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: purple;
+}
+a:active {
+    color: green;
+}
+</style>
+</head>
+
+<body>
+
+<div id="header">
+<h1>Fish Off the List |>(_) </h1>
+</div>
+
+<div id="nav">
+<a href="index.html"><button>About</button></a><br>
+<a href="list.html"><button>List of Fish</button></a><br>
+<a href="locations.html"><button>Locations</button></a><br>
+<a href="subscribe.html"><button>subscribe</button></a><br>
+<a href="donate.html"><button>Donate</button></a><br>
+</div>
+
+<div id="section">
+<h2>Email Subscription</h2>
+<form id="listbox_subscribe" method="post" action="http://www.nps.edu" >
+  <fieldset class="radio">
+    
+    <input name="list_id" type="hidden" value="241519" />
+
+
+    <table cellspacing="5" style="width:100%">
+      <tr>
+        <td>
+          <label for="username">Email Address:</label>
+          <br />
+          <input class="form-control" id="username" name="username" style="width: 95%;" type="text" />
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table style="width:100%;">
+            <tr>
+              <td>
+                <input id='subscribe' type='radio' name="action" value="subscribe" />
+                <label for="subscribe">Subscribe</label> &nbsp;
+              </td>
+              <td>
+                <input id="unsubscribe" type='radio' name="action" value="unsubscribe" />
+                <label for="unsubscribe">Unsubscribe</label>
+              </td>
+              <td align="right">
+                <input type="submit" value="Submit" />
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+
+    
+</div>
+
+<div id="footer">
+For demonstation purposes only!
+</div>
+
+</body>
+</html>
+
